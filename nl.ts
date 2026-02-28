@@ -1,0 +1,128 @@
+import type { TranslationMap } from "../lib/types.ts";
+
+export const nl: TranslationMap = {
+  common: {
+    version: "Versie",
+    health: "Gezondheid",
+    ok: "OK",
+    offline: "Offline",
+    connect: "Verbinden",
+    refresh: "Vernieuwen",
+    enabled: "Ingeschakeld",
+    disabled: "Uitgeschakeld",
+    na: "n.v.t.",
+    docs: "Documentatie",
+    resources: "Bronnen",
+  },
+  nav: {
+    chat: "Chat",
+    control: "Controle",
+    agent: "Agent",
+    settings: "Instellingen",
+    expand: "Zijbalk uitklappen",
+    collapse: "Zijbalk inklappen",
+  },
+  tabs: {
+    agents: "Agents",
+    overview: "Overzicht",
+    channels: "Kanalen",
+    instances: "Instanties",
+    sessions: "Sessies",
+    usage: "Gebruik",
+    cron: "Cron-taken",
+    skills: "Vaardigheden",
+    nodes: "Nodes",
+    chat: "Chat",
+    config: "Configuratie",
+    debug: "Debug",
+    logs: "Logs",
+  },
+  subtitles: {
+    agents: "Beheer agent-workspaces, tools en identiteiten.",
+    overview: "Gateway-status, toegangspunten en een snelle health-check.",
+    channels: "Beheer kanalen en instellingen.",
+    instances: "Presence-beacons van verbonden clients en nodes.",
+    sessions: "Inspecteer actieve sessies en pas standaardwaarden per sessie aan.",
+    usage: "Monitor API-gebruik en kosten.",
+    cron: "Plan wake-ups en terugkerende agent-runs.",
+    skills: "Beheer skill-beschikbaarheid en API-key-injectie.",
+    nodes: "Gekoppelde apparaten, mogelijkheden en commando-toegang.",
+    chat: "Directe gateway-chat voor snelle ingrepen.",
+    config: "Bewerk ~/.openclaw/openclaw.json veilig.",
+    debug: "Gateway-snapshots, events en handmatige RPC-calls.",
+    logs: "Live tail van de gateway-logbestanden.",
+  },
+  overview: {
+    access: {
+      title: "Gateway-toegang",
+      subtitle: "Waar het dashboard verbindt en hoe het authenticatie doet.",
+      wsUrl: "WebSocket-URL",
+      token: "Gateway-token",
+      password: "Wachtwoord (niet opgeslagen)",
+      sessionKey: "Standaard sessiesleutel",
+      language: "Taal",
+      connectHint: "Klik op Verbinden om verbindingswijzigingen toe te passen.",
+      trustedProxy: "Geauthenticeerd via vertrouwde proxy.",
+    },
+    snapshot: {
+      title: "Momentopname",
+      subtitle: "Laatste gateway handshake-informatie.",
+      status: "Status",
+      uptime: "Uptime",
+      tickInterval: "Tick-interval",
+      lastChannelsRefresh: "Laatste kanaalverversing",
+      channelsHint:
+        "Gebruik Kanalen om WhatsApp, Telegram, Discord, Signal of iMessage te koppelen.",
+    },
+    stats: {
+      instances: "Instanties",
+      instancesHint: "Presence-beacons in de afgelopen 5 minuten.",
+      sessions: "Sessies",
+      sessionsHint: "Recente sessiesleutels die door de gateway zijn bijgehouden.",
+      cron: "Cron",
+      cronNext: "Volgende wake {time}",
+    },
+    notes: {
+      title: "Notities",
+      subtitle: "Snelle reminders voor remote-control setups.",
+      tailscaleTitle: "Tailscale Serve",
+      tailscaleText:
+        "Gebruik bij voorkeur serve-modus om de gateway op loopback te houden met tailnet-auth.",
+      sessionTitle: "Sessies schoon houden",
+      sessionText: "Gebruik /new of sessions.patch om context te resetten.",
+      cronTitle: "Cron-reminders",
+      cronText: "Gebruik geïsoleerde sessies voor terugkerende runs.",
+    },
+    auth: {
+      required:
+        "Deze gateway vereist auth. Voeg een token of wachtwoord toe en klik daarna op Verbinden.",
+      failed:
+        "Authenticatie mislukt. Kopieer opnieuw een getokenized URL met {command}, of werk het token bij en klik dan op Verbinden.",
+    },
+    pairing: {
+      hint: "Dit apparaat heeft pairing-goedkeuring nodig van de gateway-host.",
+      mobileHint:
+        "Op mobiel? Kopieer de volledige URL (incl. #token=...) uit openclaw dashboard --no-open op je desktop.",
+    },
+    insecure: {
+      hint:
+        "Deze pagina is HTTP, dus de browser blokkeert device identity. Gebruik HTTPS (Tailscale Serve) of open {url} op de gateway-host.",
+      stayHttp: "Als je toch op HTTP moet blijven, zet {config} (alleen token).",
+    },
+  },
+  chat: {
+    disconnected: "Verbinding met gateway verbroken.",
+    refreshTitle: "Chatgegevens verversen",
+    thinkingToggle: "Toon/verberg assistent-denk/werk-output",
+    focusToggle: "Focusmodus aan/uit (verberg zijbalk + paginakop)",
+    onboardingDisabled: "Uitgeschakeld tijdens onboarding",
+  },
+  languages: {
+    en: "English",
+    nl: "Nederlands",
+    zhCN: "简体中文 (Simplified Chinese)",
+    zhTW: "繁體中文 (Traditional Chinese)",
+    ptBR: "Português (Brazilian Portuguese)",
+    de: "Deutsch (German)",
+  },
+};
